@@ -1,0 +1,29 @@
+---
+classes:
+ - custom_facts
+ - motd
+ - bashenv
+ - rc_local
+ - resolv
+ - ntp
+ - zabbix_agent
+ - vmwaretools
+ - geolib
+ - ipaclient
+ - puppetenv::cron
+ - puppetenv::log
+
+# as of puppet 4.X we're no longer setting non-default values in puppet.conf
+# managing puppet.conf with puppet also makes it hard to test new settings 
+# - puppetenv::puppetconf
+
+
+ipaclient::principal: 'admin'
+ipaclient::password: 'ip5@dm1n'
+ipaclient::domain: 'placeiq.net'
+ipaclient::realm: 'PLACEIQ.NET'
+ipaclient::mkhomedir: true
+ipaclient::automount: false
+ipaclient::ntp: false
+
+root_pw::hashed_pw: '$6$tfeGWwZM$HUY2Ml0EGMIzDLEuo.Xs39WjR/lxic7O0x5GQIe4StWy.UnaqLzZKPUYL0bds6d5OVNd5Z1vUaS9HHilatRp4/'

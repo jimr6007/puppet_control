@@ -1,0 +1,13 @@
+---
+resolv::_search_value: sec.placeiq.net placeiq.net
+resolv::_name_servers:
+  - 10.16.41.53
+  - 10.16.41.54
+
+ntp::_ntp_servers:
+  - ntp1.sec.placeiq.net
+  - ntp2.sec.placeiq.net
+
+zabbix_agent::_zabbix_servers:
+  - 10.16.41.18
+  - 10.1.41.18

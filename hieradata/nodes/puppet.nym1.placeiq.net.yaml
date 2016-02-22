@@ -1,0 +1,13 @@
+---
+classes:
+#  - postgresql::globals
+#  - postgresql::server::contrib
+  - puppetdb
+  - puppetdb::master::config
+# - puppetexplorer
+
+
+
+postgresql::globals::manage_package_repo: true
+postgresql::globals::version: '9.4'
+puppetdb::listen_address: 0.0.0.0
