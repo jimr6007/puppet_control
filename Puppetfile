@@ -6,5 +6,5 @@ mod 'puppetlabs/ntp', '3.0.3'
 mod 'puppetlabs/stdlib'
 
 
-mod "piq_modules",
-  :git => "git@github.com:jimr6007/puppet.git"
+#mod "piq_modules",
+#  :git => "git@github.com:jimr6007/puppet.git"
