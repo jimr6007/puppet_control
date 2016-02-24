@@ -10,8 +10,5 @@ allow_virtual => $allow_virtual_packages,
 }
 
 
-# enable hiera node classification
-# must add the "classes" item to each hiera yaml file for which you want to specify classes
-
 
 hiera_include('classes')
